@@ -117,6 +117,10 @@ class LinkedList
 
         return currnode
     end
+    
+    def at(i)
+        return traverse(i)._data
+    end
 
     #i can be either index or iterator where you want to delete
     def delete_at(i)
