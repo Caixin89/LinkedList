@@ -122,7 +122,7 @@ class LinkedList
         return traverse(i)._data
     end
 
-    #i can be either index or iterator where you want to delete
+    # i can be either index or node where you want to delete.
     def delete_at(i)
         raise "Index is neither integer nor node" if !i.is_a?(Integer) && !i.is_a?(Node)
 
@@ -141,7 +141,7 @@ class LinkedList
         @size-=1
     end
 
-    #i can be either index or iterator where you want to insert _data
+    # i can be either index or node where you want to insert _data.
     def insert_at(i, _data)
         raise "Index is neither integer nor node" if !i.is_a?(Integer) && !i.is_a?(Node)
         newnode=Node.new(_data)
