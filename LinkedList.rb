@@ -173,9 +173,9 @@ class LinkedList
     end
 
     def pop
-        currnode=last
-        delete_at(last)
-        return last
+        currnode = last
+        delete_at(currnode)
+        return currnode._data
     end
 
     private :arr_initialize, :ll_initialize
